@@ -1,15 +1,16 @@
 import './App.css';
 import About from './components/Body/About';
-import Intro from './components/Body/Intro';
+import Projects from './components/Body/Projects';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 
 function App() {
   return (
     <div className="App">
+      
       <Header />
-      <Intro />
-      <About />
+      {/* <Projects /> */}
+      <About/>
       <Footer />
     </div>
   );

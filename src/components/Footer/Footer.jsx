@@ -1,13 +1,13 @@
 import { Button } from "@mui/material";
 
 const Footer =()=>{
-  return <section>
-    <a href="">E-Mail</a>
+  return <footer>
+    <Button variant="outlined" href="mailto:mubarekhassen4@gmail.com" rel="noreferrer" target='_blank' >E-Mail</Button>
     <br />
-    <a href="">LinkedIn</a>
+    <Button variant="outlined" href="https://www.linkedin.com/in/mubarek-hassen-wubitu/" rel="noreferrer" target='_blank' >LinkedIn</Button>
     <br />
-    <a href="">GitHub</a>
-  </section>
+    <Button variant="outlined" href="https://github.com/Mubarek-Hassen" rel="noreferrer" target='_blank' >GitHub</Button>
+  </footer>
 }
 
 export default Footer;
