@@ -1,12 +1,12 @@
-import { Box } from "@mui/material"
+import { Box, Typography } from "@mui/material"
 
 
 const Title=()=>{
   return (
     <Box>
-      <h1>
+      <Typography sx={{fontSize: 46}} >
         Mubarek Hassen
-      </h1>
+      </Typography>
     </Box>
   )
 }
