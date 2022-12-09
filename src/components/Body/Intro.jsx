@@ -5,7 +5,7 @@ const Intro =()=>{
 
   return (
     <Box className={classes.intro} sx={{border: '5px black solid', m: 4, p: 4, backgroundColor: ' rgba(0,0,0,0.7)'}} >
-      <Typography fontSize={50} sx={{ color: 'wheat', p: 4}}>
+      <Typography fontSize={50} sx={{ color: 'ghostwhite', p: 4}}>
         Hi There! I'm Mubarek Hassen!
         <br />
         Welcome to my page!

@@ -2,25 +2,7 @@
   text-align: center;
   position: relative;
   min-height: 90vh;
-
 }
 .App-content {
   padding-bottom: 3.5rem;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

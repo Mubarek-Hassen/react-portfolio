@@ -1,14 +1,14 @@
-import { Container } from "@mui/material"
+import { Box } from "@mui/material"
 import NavBar from "./NavBar"
 import Title from "./Title"
 // import classes from './Header.module.css'
 
 const Header =()=>{
   return (
-    <Container sx={{display: 'flex', flex: 'wrap' , justifyContent: 'space-between', alignItems: 'center'}} >
+    <Box sx={{display: 'flex', flex: 'wrap' , justifyContent: 'space-around', alignItems: 'center', backgroundColor: 'rgba(0,0,0,0.7)', m:0, border: 'black solid 5px'}} >
     <Title />
     <NavBar />
-    </Container>
+    </Box>
   )
 }
 
