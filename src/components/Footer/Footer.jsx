@@ -1,4 +1,4 @@
-import { Button, Box } from "@mui/material";
+import { Button } from "@mui/material";
 import classes from './Footer.module.css'
 const Footer =()=>{
   return <section className={classes.btm}>

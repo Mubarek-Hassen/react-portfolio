@@ -1,15 +1,14 @@
 import './App.css';
-import Intro from './components/Body/Intro';
 import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
+import MiniDrawer from './components/UI/Nav';
+
 
 
 function App() {
   return (
     <section className="App">
     <div className='App-content'>
-      <Header />
-      <Intro />
+      <MiniDrawer />
     </div>
       <Footer />
     </section>
