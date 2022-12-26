@@ -1,16 +1,16 @@
 import './App.css';
-import Footer from './components/Footer/Footer';
-import MiniDrawer from './components/UI/Nav';
-
+import MiniDrawer from './components/UI/MiniDrawer';
+import About from './components/pages/About';
 
 
 function App() {
   return (
     <section className="App">
     <div className='App-content'>
-      <MiniDrawer />
+      <MiniDrawer>
+        <About />
+      </MiniDrawer>
     </div>
-      <Footer />
     </section>
   );
 }
