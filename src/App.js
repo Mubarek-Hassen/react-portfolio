@@ -11,6 +11,8 @@ function App() {
       <MiniDrawer>
         <Routes>
           <Route path='/' element={<About />} />
+          <Route path='/skills' element={<p>skills</p>} />
+          <Route path='/projects' element={<p>projects</p>} />
         </Routes>
       </MiniDrawer>
     </div>
