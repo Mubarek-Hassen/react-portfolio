@@ -185,7 +185,9 @@ export default function MiniDrawer(props) {
           ))}
         </List>
       </Drawer>
+      <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
       {props.children}
+      </Box>
       {/* <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <DrawerHeader />
         <img src="https://avatars.githubusercontent.com/u/102003916?v=4" alt="mubarek" />

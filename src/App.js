@@ -1,6 +1,7 @@
 import './App.css';
 import MiniDrawer from './components/UI/MiniDrawer';
 import About from './components/pages/About';
+import { Routes, Route } from 'react-router-dom';
 
 
 function App() {
@@ -8,7 +9,9 @@ function App() {
     <section className="App">
     <div className='App-content'>
       <MiniDrawer>
-        <About />
+        <Routes>
+          <Route path='/' element={<About />} />
+        </Routes>
       </MiniDrawer>
     </div>
     </section>

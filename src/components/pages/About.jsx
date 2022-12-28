@@ -1,8 +1,8 @@
-import { Box, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 
 const About =()=>{
 
-  return  <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
+  return  <section>
     <img src="https://avatars.githubusercontent.com/u/102003916?v=4" alt="mubarek" />
     <Typography variant='h5' paragraph>
       Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper
@@ -17,7 +17,7 @@ const About =()=>{
       eleifend. Commodo viverra maecenas accumsan lacus vel facilisis. Nulla
       posuere sollicitudin aliquam ultrices sagittis orci a.
     </Typography>
-  </Box> 
+  </section> 
 }
 
 export default About;
