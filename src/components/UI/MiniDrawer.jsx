@@ -1,4 +1,4 @@
-
+import { NavLink } from 'react-router-dom';
 import * as React from 'react';
 import { styled, useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
@@ -17,7 +17,7 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import { Javascript, Engineering, Work, Games, GitHub, Twitter, Mail } from '@mui/icons-material';
+import { Javascript, Engineering, Work, Home, GitHub, Twitter, Mail } from '@mui/icons-material';
 
 
 const drawerWidth = 240;
@@ -129,8 +129,9 @@ export default function MiniDrawer(props) {
         </DrawerHeader>
         <Divider />
         <List>
-          {['About', 'Skills', 'Projects', 'Demo'].map((text, index) => (
-            <ListItem key={text} disablePadding sx={{ display: 'block' }}>
+          {[{title: 'Home', path: '/'},{title:'About', path: '/about'}, {title:'Skills', path: '/skills'}, {title:'Projects', path: '/projects'}].map((text, index) => (
+            <NavLink key={index} to={text.path}>
+            <ListItem key={index} disablePadding sx={{ display: 'block' }}>
               <ListItemButton
                 sx={{
                   minHeight: 48,
@@ -145,15 +146,17 @@ export default function MiniDrawer(props) {
                     justifyContent: 'center',
                   }}
                 >
-                  {index === 0 && <Engineering />}
-                  {index === 1 && <Javascript />}
-                  {index === 2 && <Work />}
-                  {index === 3 && <Games />}
+                  {index === 0 && <Home />}
+                  {index === 1 && <Engineering />}
+                  {index === 2 && <Javascript />}
+                  {index === 3 && <Work />}
+
 
                 </ListItemIcon>
-                <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
+                <ListItemText primary={text.title} sx={{ opacity: open ? 1 : 0 }} />
               </ListItemButton>
             </ListItem>
+            </NavLink>
           ))}
         </List>
         <Divider />
@@ -185,7 +188,7 @@ export default function MiniDrawer(props) {
           ))}
         </List>
       </Drawer>
-      <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
+      <Box component="main" sx={{ flexGrow: 1, p: 7 }}>
       {props.children}
       </Box>
       {/* <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
