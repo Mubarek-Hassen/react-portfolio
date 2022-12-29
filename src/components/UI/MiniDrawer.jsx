@@ -130,7 +130,7 @@ export default function MiniDrawer(props) {
         <Divider />
         <List>
           {[{title: 'Home', path: '/'},{title:'About', path: '/about'}, {title:'Skills', path: '/skills'}, {title:'Projects', path: '/projects'}].map((text, index) => (
-            <NavLink key={index} to={text.path}>
+            <NavLink className={(navData)=> navData.isActive ? 'navLink-active' : 'inactive'} key={index} to={text.path}>
             <ListItem key={index} disablePadding sx={{ display: 'block' }}>
               <ListItemButton
                 sx={{
@@ -144,6 +144,7 @@ export default function MiniDrawer(props) {
                     minWidth: 0,
                     mr: open ? 3 : 'auto',
                     justifyContent: 'center',
+                    color: 'inherit'
                   }}
                 >
                   {index === 0 && <Home />}
@@ -188,26 +189,9 @@ export default function MiniDrawer(props) {
           ))}
         </List>
       </Drawer>
-      <Box component="main" sx={{ flexGrow: 1, p: 7 }}>
+      {/* <Box component="main" sx={{ flexGrow: 1, p: 7 }}> */}
       {props.children}
-      </Box>
-      {/* <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
-        <DrawerHeader />
-        <img src="https://avatars.githubusercontent.com/u/102003916?v=4" alt="mubarek" />
-        <Typography variant='h5' paragraph>
-          Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper
-          eget nulla facilisi etiam dignissim diam. Pulvinar elementum integer enim
-          neque volutpat ac tincidunt. Ornare suspendisse sed nisi lacus sed viverra
-          tellus. Purus sit amet volutpat consequat mauris. Elementum eu facilisis
-          sed odio morbi. Euismod lacinia at quis risus sed vulputate odio. Morbi
-          tincidunt ornare massa eget egestas purus viverra accumsan in. In hendrerit
-          gravida rutrum quisque non tellus orci ac. Pellentesque nec nam aliquam sem
-          et tortor. Habitant morbi tristique senectus et. Adipiscing elit duis
-          tristique sollicitudin nibh sit. Ornare aenean euismod elementum nisi quis
-          eleifend. Commodo viverra maecenas accumsan lacus vel facilisis. Nulla
-          posuere sollicitudin aliquam ultrices sagittis orci a.
-        </Typography>
-      </Box> */}
+      {/* </Box> */}
     </Box>
   );
 }

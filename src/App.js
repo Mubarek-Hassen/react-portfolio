@@ -1,4 +1,3 @@
-import './App.css';
 import MiniDrawer from './components/UI/MiniDrawer';
 import About from './components/About';
 import Home from './components/Home';
