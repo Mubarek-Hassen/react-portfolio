@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import * as React from 'react';
 import { styled, useTheme } from '@mui/material/styles';
-import Box from '@mui/material/Box';
+import { Box } from '@mui/material';
 import MuiDrawer from '@mui/material/Drawer';
 import MuiAppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
@@ -117,6 +117,7 @@ export default function MiniDrawer(props) {
             <MenuIcon />
           </IconButton>
           <NavLink to={'/'} style={{ textDecorationLine: 'none'}} >
+            
           <Typography sx={{fontSize: '2rem', color: 'ghostwhite', }} noWrap component="div">
             Mubarek Hassen
           </Typography>
