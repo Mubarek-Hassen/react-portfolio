@@ -19,8 +19,8 @@ code {
 }
 
 .navLink-active {
-  background-color: green;
   color: green;
+  background-color: yellow;
 }
 .inactive {
   color: chocolate;

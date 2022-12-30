@@ -1,13 +1,20 @@
-import { Typography, Box, Avatar } from "@mui/material"
+import { Typography, Box, Avatar, createTheme, ThemeProvider, responsiveFontSizes } from "@mui/material"
 
 
 const Home =()=>{
-  return <Box sx={{ flexGrow: 1, display: 'flex', flexWrap: 'wrap', justifyContent: 'space-evenly', alignItems: 'center', }}>
-    <Avatar src="https://avatars.githubusercontent.com/u/102003916?v=4" sx={{width: 200, height: 200}} />
+  let theme = createTheme();
+  theme = responsiveFontSizes(theme);
+
+  return <Box sx={{ flexGrow: 1, py: 10, px: 4 }}>
+    <Box sx={{display: 'flex', flexWrap: 'wrap' ,justifyContent: 'space-evenly', alignItems: 'center', minHeight: '40vh' }}>
+    <Avatar src="https://avatars.githubusercontent.com/u/102003916?v=4" sx={{width: 250, height: 250}} />
     <div>
-      <Typography fluid= 'true' variant="h3">Hello World!</Typography>
-      <Typography variant="h3">I'm <span style={{color: 'green',}}> Mubarek Hassen</span>.</Typography>
+      <ThemeProvider theme={theme}>
+      <Typography variant="h2">Hello World!</Typography>
+      <Typography variant="h2">I'm <span style={{color: 'green',}}> Mubarek Hassen</span>.</Typography>
+      </ThemeProvider>
     </div>
+    </Box>
   </Box>
 }
 

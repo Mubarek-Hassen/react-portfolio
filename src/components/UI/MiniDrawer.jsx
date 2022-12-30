@@ -17,7 +17,7 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import { Javascript, Engineering, Work, Home, GitHub, Twitter, Mail } from '@mui/icons-material';
+import { Javascript, Engineering, Work, Home, GitHub, Twitter, Mail, LocalCafe } from '@mui/icons-material';
 
 
 const drawerWidth = 240;
@@ -100,10 +100,10 @@ export default function MiniDrawer(props) {
   };
 
   return (
-    <Box sx={{ display: 'flex', backgroundColor: 'grey', minHeight: '100vh', backgroundAttachment: 'fixed' }}>
+    <Box sx={{ display: 'flex', backgroundColor: 'ghostwhite', minHeight: '100vh', backgroundAttachment: 'fixed' }}>
       <CssBaseline  />
       <AppBar position="fixed" open={open}>
-        <Toolbar sx={{backgroundColor: 'red'}}>
+        <Toolbar sx={{backgroundColor: 'green'}}>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -116,9 +116,12 @@ export default function MiniDrawer(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h4" noWrap component="div">
+          <NavLink to={'/'} style={{ textDecorationLine: 'none'}} >
+          <Typography sx={{fontSize: '2rem', color: 'ghostwhite', }} noWrap component="div">
             Mubarek Hassen
           </Typography>
+          </NavLink>
+          <LocalCafe sx={{mx: 2}} />
         </Toolbar>
       </AppBar>
       <Drawer variant="permanent" open={open}>
@@ -144,17 +147,15 @@ export default function MiniDrawer(props) {
                     minWidth: 0,
                     mr: open ? 3 : 'auto',
                     justifyContent: 'center',
-                    color: 'inherit'
+                    color: 'inherit',
                   }}
                 >
                   {index === 0 && <Home />}
                   {index === 1 && <Engineering />}
                   {index === 2 && <Javascript />}
                   {index === 3 && <Work />}
-
-
                 </ListItemIcon>
-                <ListItemText primary={text.title} sx={{ opacity: open ? 1 : 0 }} />
+                <ListItemText primary={text.title} sx={{ opacity: open ? 1 : 0}} />
               </ListItemButton>
             </ListItem>
             </NavLink>
