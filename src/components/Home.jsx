@@ -17,9 +17,9 @@ const Home =()=>{
     </div>
     </Box>
     <Box sx={{display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: 2 }}>
-      <Button variant="contained" sx={{backgroundColor: 'chocolate'}}>Resume</Button>
-      <Button variant="contained" sx={{backgroundColor: 'chocolate'}}>Certificate</Button>
-      <Button variant="contained" sx={{backgroundColor: 'chocolate'}}>Cover Letter</Button>
+      <Button href="https://drive.google.com/file/d/1EuTr7x1yn4WzvBfmr-E0MHr4W49SmZMZ/view?usp=share_link" target='_blank' rel='noopener noreferrer' variant="contained" sx={{backgroundColor: 'chocolate'}}>Resume</Button>
+      <Button href="https://drive.google.com/file/d/1-mMXawayDRy5x316Ffum8e1SXuq5b0JI/view?usp=share_link" target='_blank' rel='noopener noreferrer' variant="contained" sx={{backgroundColor: 'chocolate'}}>Certificate</Button>
+      <Button href="https://docs.google.com/document/d/1R202c4maIDH8y-eluhxSiZQ--FQQ0BnI20IZM1dvfQo/edit?usp=share_link" target='_blank' rel='noopener noreferrer' variant="contained" sx={{backgroundColor: 'chocolate'}}>Cover Letter</Button>
     </Box>
   </Box>
 }
