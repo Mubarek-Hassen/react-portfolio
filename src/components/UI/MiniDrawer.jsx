@@ -180,9 +180,9 @@ export default function MiniDrawer(props) {
                     justifyContent: 'center',
                   }}
                 >
-                  {index === 0 && <Mail />}
-                  {index === 1 && <GitHub />}
-                  {index === 2 && <Twitter />}
+                  {index === 0 && <Mail sx={{}} />}
+                  {index === 1 && <GitHub sx={{color: 'black'}} />}
+                  {index === 2 && <Twitter sx={{color: 'skyblue'}} />}
                   
                 </ListItemIcon>
                 <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
