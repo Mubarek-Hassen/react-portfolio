@@ -6,8 +6,8 @@ const Home =()=>{
   theme = responsiveFontSizes(theme);
 
   return <Box sx={{ flexGrow: 1, py: 10, px: 4 }}>
-    <Box sx={{display: 'flex', flexWrap: 'wrap' ,justifyContent: 'space-evenly', alignItems: 'center', minHeight: '40vh' }}>
-    <Avatar src="https://avatars.githubusercontent.com/u/102003916?v=4" sx={{width: 250, height: 250}} />
+    <Box sx={{display: 'flex', flexWrap: 'wrap' ,justifyContent: 'space-evenly', alignItems: 'center', minHeight: '40vh',  }}>
+    <Avatar variant='rounded' src="https://avatars.githubusercontent.com/u/102003916?v=4" sx={{width: 250, height: 250}} />
     <div>
       <ThemeProvider theme={theme}>
       <Typography variant="h3">Hello World!</Typography>
@@ -16,7 +16,7 @@ const Home =()=>{
       </ThemeProvider>
     </div>
     </Box>
-    <Box sx={{display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: 2 }}>
+    <Box sx={{textAlign: 'center',display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: 4, alignItems: 'center' }}>
       <Button href="https://drive.google.com/file/d/1EuTr7x1yn4WzvBfmr-E0MHr4W49SmZMZ/view?usp=share_link" target='_blank' rel='noopener noreferrer' variant="contained" sx={{backgroundColor: 'chocolate'}}>Resume</Button>
       <Button href="https://drive.google.com/file/d/1-mMXawayDRy5x316Ffum8e1SXuq5b0JI/view?usp=share_link" target='_blank' rel='noopener noreferrer' variant="contained" sx={{backgroundColor: 'chocolate'}}>Certificate</Button>
       <Button href="https://docs.google.com/document/d/1R202c4maIDH8y-eluhxSiZQ--FQQ0BnI20IZM1dvfQo/edit?usp=share_link" target='_blank' rel='noopener noreferrer' variant="contained" sx={{backgroundColor: 'chocolate'}}>Cover Letter</Button>
