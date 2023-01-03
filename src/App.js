@@ -11,7 +11,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
-          <Route path='/skills' element={<p>skills</p>} />
+          <Route path='/skills' element={<img src='https://miro.medium.com/max/1400/1*uoUra4LLjZqtkMH4RUeRmw.gif' style={{ marginTop: '4rem',maxWidth: '20vh', maxHeight: '15vh' }} alt='skills' />} />
           <Route path='/projects' element={<p>projects</p>} />
         </Routes>
       </MiniDrawer>
