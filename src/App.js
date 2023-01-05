@@ -13,13 +13,16 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
-          <Route path='/skills' element={<img src='https://miro.medium.com/max/1400/1*uoUra4LLjZqtkMH4RUeRmw.gif' style={{ marginTop: '4rem',maxWidth: '20vh', maxHeight: '15vh' }} alt='skills' />} />
+          <Route path='/skills' element={<Skills />} />
           <Route path='/projects' element={<p>projects</p>} />
         </Routes>
-        <Skills />
+      
       </MiniDrawer>
       </section>
   );
 }
 
 export default App;
+
+
+{/* <img src='https://miro.medium.com/max/1400/1*uoUra4LLjZqtkMH4RUeRmw.gif' style={{ marginTop: '4rem',maxWidth: '20vh', maxHeight: '15vh' }} alt='skills' /> */}

@@ -1,7 +1,43 @@
 [
   {
     "name": "React",
-    "image": "https://avatars.githubusercontent.com/u/102003916?v=4"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+  },
+  {
+    "name": "Redux",
+    "image": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/redux-icon.png"
+  },
+  {
+    "name": "Javascript",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+  },
+  {
+    "name": "Express.js",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png"
+  },
+  {
+    "name": "Node.js",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png"
+  },
+  {
+    "name": "Mongo DB",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png"
+  },
+  {
+    "name": "Rest",
+    "image": "https://www.snmpcenter.com/wp-content/uploads/2016/10/RESTful-API-logo-for-light-bg.png"
+  },
+  {
+    "name": "Material UI",
+    "image": "https://v4.mui.com/static/logo.png"
+  },
+  {
+    "name": "Bootstrap",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1280px-Bootstrap_logo.svg.png"
+  },
+  {
+    "name": "SQL",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
   },
   {
     "name": "React",
