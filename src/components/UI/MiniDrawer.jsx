@@ -103,7 +103,7 @@ export default function MiniDrawer(props) {
     <Box sx={{ display: 'flex', backgroundColor: 'ghostwhite', minHeight: '100vh', backgroundAttachment: 'fixed' }}>
       <CssBaseline  />
       <AppBar position="fixed" open={open}>
-        <Toolbar sx={{backgroundColor: 'green'}}>
+        <Toolbar sx={{backgroundColor: 'darkgreen'}}>
           <IconButton
             color="inherit"
             aria-label="open drawer"
