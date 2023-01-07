@@ -17,7 +17,7 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import { Javascript, Engineering, Work, Home, GitHub, Twitter, Mail, LocalCafe } from '@mui/icons-material';
+import { Javascript, Engineering, Work, Home, GitHub, Twitter, Mail, LocalCafe, LinkedIn } from '@mui/icons-material';
 
 
 const drawerWidth = 240;
@@ -164,7 +164,7 @@ export default function MiniDrawer(props) {
         </List>
         <Divider />
         <List>
-          {['Email', 'GitHub', 'Twitter'].map((text, index) => (
+          {['Email', 'GitHub', 'Twitter', 'LinkedIn'].map((text, index) => (
             <ListItem key={text} disablePadding sx={{ display: 'block' }}>
               <ListItemButton
                 sx={{
@@ -180,9 +180,10 @@ export default function MiniDrawer(props) {
                     justifyContent: 'center',
                   }}
                 >
-                  {index === 0 && <Mail sx={{}} />}
-                  {index === 1 && <GitHub sx={{color: 'black'}} />}
-                  {index === 2 && <Twitter sx={{color: 'skyblue'}} />}
+                  {index === 0 && <Mail />}
+                  {index === 1 && <GitHub sx={{color: '#171515'}} />}
+                  {index === 2 && <Twitter sx={{color: '#00acee'}} />}
+                  {index === 3 && <LinkedIn sx={{ color: '#0072b1'}} />}
                   
                 </ListItemIcon>
                 <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />

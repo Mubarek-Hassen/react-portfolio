@@ -5,7 +5,6 @@ import { Routes, Route } from 'react-router-dom';
 import Skills from './components/Skills/Skills';
 
 
-
 function App() {
   return (
     <section>
@@ -21,8 +20,4 @@ function App() {
       </section>
   );
 }
-
 export default App;
-
-
-{/* <img src='https://miro.medium.com/max/1400/1*uoUra4LLjZqtkMH4RUeRmw.gif' style={{ marginTop: '4rem',maxWidth: '20vh', maxHeight: '15vh' }} alt='skills' /> */}
