@@ -7,9 +7,10 @@ const Skills =()=>{
   return <Box sx={{ flexGrow: 1, py: 10, px: 2, textAlign: 'center' }}>
     <ThemeProvider theme={theme}>
     <Typography variant="h2" sx={{ fontWeight: '500' }}> Skills </Typography>
+    <br />
     
     <Typography variant="h5" sx={{ mx: '1rem'  }} paragraph>
-      As a Full Stack Developer, one has to be comfortable, consistant, patient, passionate and motivated to consume new knowledge and evolve with new technology. Working on a full stack taught me how to integrate different technologies and get the desired outcome. But technical skills are not the only things that are needed. Sometimes, we have to work with fellow colleague. Interacting and communication are requirement as well.
+      - As a Full Stack Developer, one has to be comfortable, consistant, patient, passionate and motivated to consume new knowledge and evolve with new technology. Working on a full stack taught me how to integrate different technologies and get the desired outcome. But technical skills are not the only things that are needed. Sometimes, we have to work with fellow colleague. Interacting and communication are requirement as well.
     </Typography>
     
         <ThemeProvider theme={theme}>
@@ -34,8 +35,20 @@ const Skills =()=>{
       </Box>
     </Box>
         </ThemeProvider>
+        <Box>
+          <br />
+          <br />
+          <Typography variant="h3">
+            Technical Skills
+          </Typography>
 
-
+          <Box sx={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', flexWrap: 'wrap' }}>
+          <Typography variant="h5" paragraph sx={{ maxWidth: '45rem'  }}>
+            During my journey of full stack development, I've been exposed to a lot of development concepts, designs, libraries and frameworks that would allow me to achieve the desired outcome. RESTful API, Model View Controllers, Object Oriented Programming, Database Queries... the list goes on and on. These and other concepts am happy to know them and work with them.
+          </Typography>
+          <Avatar src="https://static.thenounproject.com/png/3293529-200.png" sx={{ width: '15rem', height: '15rem', }} variant='rounded' />
+          </Box>
+        </Box>
     <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', alignContent: 'center', }}>
     { objOfSkills.map(( item, i) => <Skill key={i} image={item.image} alt={item.name} name={item.name} />)}
     </Box>
