@@ -1,13 +1,14 @@
 import { Typography, Box, Avatar, createTheme, ThemeProvider, responsiveFontSizes, Button } from "@mui/material"
-
+import { motion } from "framer-motion";
 
 const Home =()=>{
   let theme = createTheme();
   theme = responsiveFontSizes(theme);
 
-  return <Box sx={{ flexGrow: 1, py: 10, px: 4 }}>
-    <Box sx={{display: 'flex', flexWrap: 'wrap' ,justifyContent: 'space-evenly', alignItems: 'center', minHeight: '40vh',  }}>
-    <Avatar variant='rounded' src="https://avatars.githubusercontent.com/u/102003916?v=4" sx={{width: 250, height: 250}} />
+  return <Box sx={{ flexGrow: 1, py: 10, px: 4 }} component={motion.div} initial={{ opacity: 0}} transition={{ duration: 0.5 }} animate={{opacity: 1}}>
+    <Box sx={{display: 'flex', flexWrap: 'wrap' ,justifyContent: 'space-evenly', alignItems: 'center', minHeight: '40vh',  }} component={motion.div}
+    initial>
+    <motion.img animate={{ rotate: 360 }} transition={{ type: 'spring', }} src="https://avatars.githubusercontent.com/u/102003916?v=4" style={{width: 250, height: 250}} />
     <div>
       <ThemeProvider theme={theme}>
       <Typography variant="h3">Hello World!</Typography>
