@@ -3,6 +3,7 @@ import About from './components/About';
 import Home from './components/Home';
 import { Routes, Route } from 'react-router-dom';
 import Skills from './components/Skills/Skills';
+import Projects from './components/Projects/Projects';
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/skills' element={<Skills />} />
-          <Route path='/projects' element={<p>projects</p>} />
+          <Route path='/projects' element={<Projects />} />
         </Routes>
       
       </MiniDrawer>
