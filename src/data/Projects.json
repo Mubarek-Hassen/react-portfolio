@@ -3,22 +3,26 @@
     {
       "title": "Vintage Simon Arcade",
       "image": "https://user-images.githubusercontent.com/102003916/174819611-f1c4a41b-5b0c-4aaa-8d41-bea2e7cfaef5.png",
-      "description": "this is description"
+      "description": "Vintage Simon Arcade is a game that is played with colors being displayed and a player returning the same pattern of colors displayed earlier.",
+      "link": "https://mubarek-hassen.github.io/Project-1-Simon-Mubarek/"
     },
     {
-      "title": "Vintage Simon Arcade",
-      "image": "https://user-images.githubusercontent.com/102003916/174819611-f1c4a41b-5b0c-4aaa-8d41-bea2e7cfaef5.png",
-      "description": "this is description"
+      "title": "Confessions",
+      "image": "https://user-images.githubusercontent.com/101551729/167882071-575c9e86-4abf-44fa-926f-d65fd1ba556b.png",
+      "description": "Confessions is a platform where a user share a secret, fantasy, regrets or any other thing that has been a burden on their emotions and interact with other users.",
+      "link": "https://github.com/Mubarek-Hassen/Project-2-Confession"
     },
     {
-      "title": "Vintage Simon Arcade",
-      "image": "https://user-images.githubusercontent.com/102003916/174819611-f1c4a41b-5b0c-4aaa-8d41-bea2e7cfaef5.png",
-      "description": "this is description"
+      "title": "Rick and Morty",
+      "image": "https://user-images.githubusercontent.com/102003916/169443966-40c3fa50-3723-464f-af02-3912d25de99b.png",
+      "description": "Rick and Morty app is based on the show and API. It is informational about the characters in the show and it was amazing to build it.",
+      "link": "https://spontaneous-buttercream-3721f4.netlify.app/"
     },
     {
-      "title": "Vintage Simon Arcade",
-      "image": "https://user-images.githubusercontent.com/102003916/174819611-f1c4a41b-5b0c-4aaa-8d41-bea2e7cfaef5.png",
-      "description": "this is description"
+      "title": "The Parley Blog",
+      "image": "https://user-images.githubusercontent.com/102003916/174825368-078a1014-480c-47dd-8403-2513e41f0e52.png",
+      "description": "The Parley Blog is a website where ideas about subjects are transcribed. It is a space where monographs articulate and discuss their subjects with the reader and receive feedbacks or comments.",
+      "link": "https://github.com/Mubarek-Hassen/project-4-the-parley-blog"
     }
   ]
 }

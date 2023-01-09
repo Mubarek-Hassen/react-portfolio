@@ -26,11 +26,11 @@ const Skills =()=>{
           <li><Typography variant='h5'>Respectful</Typography></li>
         </ul>
         <ul>
-        <li><Typography variant='h5'>Self-Confidence</Typography></li>
-        <li><Typography variant='h5'>Flexibility</Typography></li>
-        <li><Typography variant='h5'>Positive Attitude</Typography></li>
-        <li><Typography variant='h5'>Strong Work Ethic</Typography></li>
-        <li><Typography variant='h5'>Outgoing</Typography></li>
+          <li><Typography variant='h5'>Self-Confidence</Typography></li>
+          <li><Typography variant='h5'>Flexibility</Typography></li>
+          <li><Typography variant='h5'>Positive Attitude</Typography></li>
+          <li><Typography variant='h5'>Strong Work Ethic</Typography></li>
+          <li><Typography variant='h5'>Outgoing</Typography></li>
         </ul>
       </Box>
     </Box>
