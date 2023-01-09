@@ -13,16 +13,15 @@ const Project =(props)=>{
         <CardMedia
           component="img"
           height="140"
-          image="https://user-images.githubusercontent.com/102003916/174819611-f1c4a41b-5b0c-4aaa-8d41-bea2e7cfaef5.png"
-          alt="green iguana"
+          image={props.image}
+          alt={props.title}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Lizard
+            {props.title}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+            {props.description}
           </Typography>
         </CardContent>
       </CardActionArea>
