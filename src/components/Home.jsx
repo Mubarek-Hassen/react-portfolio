@@ -1,4 +1,4 @@
-import { Typography, Box, Avatar, createTheme, ThemeProvider, responsiveFontSizes, Button } from "@mui/material"
+import { Typography, Box, createTheme, ThemeProvider, responsiveFontSizes, Button } from "@mui/material"
 import { motion } from "framer-motion";
 
 const Home =()=>{

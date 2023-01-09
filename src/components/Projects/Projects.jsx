@@ -14,7 +14,10 @@ const Projects =()=>{
     </Typography>
     
     <Divider sx={{mb: '3rem', backgroundColor: 'green', mx: 10 }}/>
-    <Box sx={{ textAlign: 'center', display: 'flex', justifyContent: 'space-evenly', flexWrap: 'wrap', alignItems: 'flex-start',  }}>
+    <Box component={motion.div} sx={{ textAlign: 'center', display: 'flex', justifyContent: 'space-evenly', flexWrap: 'wrap', alignItems: 'flex-start',  }}
+    initial={{ x: '100%'}}
+    animate={{ x: 0 }}
+    transition={{ type: "spring", duration: 0.8 }}>
       {data.projects.map((project, index) => <Project key={index} image={project.image} title={project.title} description={project.description} link={project.link} />)}
     </Box>
     </ThemeProvider>

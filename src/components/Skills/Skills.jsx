@@ -2,7 +2,10 @@ import Skill from "./Skill"
 import objOfSkills from '../../data/Skills.json'
 import { Box, Typography, createTheme, responsiveFontSizes, ThemeProvider, Avatar, Divider, } from "@mui/material"
 import { motion } from "framer-motion"
+import { useRef } from "react"
+
 const Skills =()=>{
+  const scrollRef = useRef(null)
   let theme = createTheme();
   theme = responsiveFontSizes(theme);
   return <Box sx={{ flexGrow: 1, py: 10, px: 2, textAlign: 'center' }} component={motion.div} initial={{ opacity: 0}} transition={{ duration: 0.5}} animate={{opacity: 1}}>
@@ -53,7 +56,11 @@ const Skills =()=>{
         </Box>
         <br />
         <br />
-    <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', alignContent: 'center', }}>
+      <Box ref={scrollRef} component={motion.div} sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', alignContent: 'center', }}
+      viewport={{ once: true}}
+      initial={{ x: "-100%"}}
+      whileInView = {{ x: 0, duration: 3}}
+      >
     { objOfSkills.map(( item, i) => <Skill key={i} image={item.image} alt={item.name} name={item.name} />)}
     </Box>
     </ThemeProvider>
