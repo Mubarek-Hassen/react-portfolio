@@ -8,14 +8,18 @@ const Home =()=>{
   return <Box sx={{ flexGrow: 1, py: 10, px: 4 }} component={motion.div} initial={{ opacity: 0}} transition={{ duration: 0.5 }} animate={{opacity: 1}}>
     <Box sx={{display: 'flex', flexWrap: 'wrap' ,justifyContent: 'space-evenly', alignItems: 'center', minHeight: '40vh',  }} component={motion.div}
     initial>
-    <motion.img animate={{ rotate: 360 }} transition={{ type: 'spring', }} src="https://avatars.githubusercontent.com/u/102003916?v=4" style={{width: 250, height: 250}} />
-    <div>
+    <motion.img whileHover={{ scale: 1.1, transition: { duration: 0.5, type: 'spring', bounce: 0.8 } }} animate={{ rotate: 360 }} transition={{ type: 'spring', duration: 1.5 }} src="https://avatars.githubusercontent.com/u/102003916?v=4" style={{width: 250, height: 250}} />
+    <motion.div
+    initial={{ x: '100%'}}
+    animate={{ x: 0 }}
+    transition={{ type: "spring", duration: 0.8 }}
+    >
       <ThemeProvider theme={theme}>
       <Typography variant="h3">Hello World!</Typography>
       <Typography variant="h3">I'm <span style={{color: 'green', fontWeight: 'bolder'}}> Mubarek Hassen</span>.</Typography>
       <Typography variant="h3">I'm A Full Stack Developer.</Typography>
       </ThemeProvider>
-    </div>
+    </motion.div>
     </Box>
     <Box sx={{textAlign: 'center',display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: 4, alignItems: 'center' }}>
       <Button href="https://drive.google.com/file/d/1EuTr7x1yn4WzvBfmr-E0MHr4W49SmZMZ/view?usp=share_link" target='_blank' rel='noopener noreferrer' variant="contained" sx={{backgroundColor: 'chocolate'}}>Resume</Button>
