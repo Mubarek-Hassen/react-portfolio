@@ -12,7 +12,7 @@ const About =()=>{
       <hr />
       <Typography variant="h3" fontWeight='400' fontStyle='oblique' sx={{ml: '0.5rem'}} >Who Am I?</Typography>
       <Typography variant='h5' paragraph sx={{ml: '1rem',}}>
-        Hi There! <br /> I'm <span style={{color: 'green', fontWeight: '600' }}>Mubarek Hassen</span>. A Full Stack Developer who is passionate about developing solutions for problems. I'm originally from Ethiopia, but I have been living in Washington DC for quite some time. After High School, I was working in customer service. 
+        Hi There! <br /> I'm <span style={{color: 'green', fontWeight: '600' }}>Mubarek Hassen</span>. A Full Stack Developer who is passionate about developing solutions for problems. I'm originally from Ethiopia, but I have been living in Washington DC for quite some time. While serving . 
       </Typography>
     </ThemeProvider>
   </Box> 

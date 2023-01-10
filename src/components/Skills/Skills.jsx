@@ -67,8 +67,8 @@ const Skills =()=>{
     component={motion.div}
     viewport={{ once: true}}
     initial={{ scale: 0 }}
-    whileInView = {{ scale: 1}}
-    transition={{type: 'easeIn', duration: .25, delay: i * 0.15}}
+    whileInView = {{ scale: 1, rotate: 360}}
+    transition={{type: 'easeIn', rotate: 360, duration: .25, delay: i * 0.15}}
     ><Skill key={i} image={item.image} alt={item.name} name={item.name} /></motion.div>)}
     </Box>
     </ThemeProvider>
