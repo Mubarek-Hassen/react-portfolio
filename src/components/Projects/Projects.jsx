@@ -17,9 +17,10 @@ const Projects =()=>{
     <Box component={motion.div} sx={{ textAlign: 'center', display: 'flex', justifyContent: 'space-evenly', flexWrap: 'wrap', alignItems: 'flex-start',  }}
     >
       {data.projects.map((project, index) => <Box
+      key={index}
       component={motion.div}
       viewport={{ once: true}}
-      initial={{ x: '100%', opacity: 0 }}
+      initial={{ x: '80px', opacity: 0 }}
       whileInView = {{ x: 0, opacity: 1}}
       transition={{ type: 'spring', bounce: 0.4, opacity: 1, x: 0, duration: 1, delay: index * 0.25}}><Project key={index} image={project.image} title={project.title} description={project.description} link={project.link} /></Box>)}
     </Box>

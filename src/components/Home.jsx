@@ -33,8 +33,8 @@ const Home =()=>{
       </Button>
       
       <Button component={motion.a} href="https://drive.google.com/file/d/1-mMXawayDRy5x316Ffum8e1SXuq5b0JI/view?usp=share_link" target='_blank' rel='noopener noreferrer' variant="contained" sx={{backgroundColor: 'chocolate'}}
-      initial={{y: '50rem', opacity: 0}}
-      animate={{ opacity: 1, y: 0}}
+      initial={{scale: 0, opacity: 0}}
+      animate={{ opacity: 1, scale: 1}}
       transition= {{duration: 1}}
       whileHover={{scale: 1.2, transition: {duration: 0.3}}}
       whileTap={{scale: 0.8}}>
