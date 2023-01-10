@@ -60,18 +60,19 @@ const Skills =()=>{
       </Box>
         <br />
         <br />
-      <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', alignContent: 'center', }}
+      <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-evenly', alignItems: 'center', alignContent: 'center', }}
       >
     { objOfSkills.map(( item, i) => <motion.div 
     key={i}
     component={motion.div}
     viewport={{ once: true}}
-    initial={{ scale: 0.2 }}
+    initial={{ scale: 0 }}
     whileInView = {{ scale: 1}}
-    transition={{type: 'easeIn', duration: 1, delay: i * 0.15}}
+    transition={{type: 'easeIn', duration: .25, delay: i * 0.15}}
     ><Skill key={i} image={item.image} alt={item.name} name={item.name} /></motion.div>)}
     </Box>
     </ThemeProvider>
+    <Divider sx={{mt: '2rem', backgroundColor: 'green', mx: 10 }}/>
   </Box>
 }
 
