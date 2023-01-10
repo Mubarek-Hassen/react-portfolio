@@ -1,5 +1,5 @@
 import { Box, Typography, CardActionArea } from "@mui/material"
-// import { useEffect, useState } from "react";
+
 const Skill =(props)=>{
   const colorsChoice = [ 'skyblue','lightblue', 'salmon', 'rosybrown', 'navajowhite', 'darkolivegreen', 'goldenrod', 'chocolate', 'wheat', 'tomato', 'peru', 'tan', 'slateblue', 'sienna', 'purple'];
   let colorPicked = colorsChoice[Math.floor(Math.random()*colorsChoice.length)]
