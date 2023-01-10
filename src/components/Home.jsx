@@ -8,9 +8,9 @@ const Home =()=>{
   return <Box sx={{ flexGrow: 1, py: 10, px: 4 }} component={motion.div} initial={{ opacity: 0}} transition={{ duration: 0.5 }} animate={{opacity: 1}}>
     <Box sx={{display: 'flex', flexWrap: 'wrap' ,justifyContent: 'space-evenly', alignItems: 'center', minHeight: '40vh',  }} component={motion.div}
     initial>
-    <motion.img whileHover={{ scale: 1.1, transition: { duration: 0.5, type: 'spring', bounce: 0.8 } }} animate={{ rotate: 360 }} transition={{ type: 'spring', duration: 1.5 }} src="https://avatars.githubusercontent.com/u/102003916?v=4" style={{width: 250, height: 250}} />
+    <motion.img whileHover={{ scale: 1.1, transition: { duration: 0.5, type: 'spring', bounce: 0.8 } }} initial={{x: '-100vw'}} animate={{ rotate: 360, x: 0 }} transition={{ type: 'spring', duration: 1.5 }} src="https://avatars.githubusercontent.com/u/102003916?v=4" style={{width: 250, height: 250}} />
     <motion.div
-    initial={{ x: '100%'}}
+    initial={{ x: '100vw'}}
     animate={{ x: 0 }}
     transition={{ type: "spring", duration: 0.8 }}
     >
@@ -22,9 +22,34 @@ const Home =()=>{
     </motion.div>
     </Box>
     <Box sx={{textAlign: 'center',display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: 4, alignItems: 'center' }}>
-      <Button href="https://drive.google.com/file/d/1EuTr7x1yn4WzvBfmr-E0MHr4W49SmZMZ/view?usp=share_link" target='_blank' rel='noopener noreferrer' variant="contained" sx={{backgroundColor: 'chocolate'}}>Resume</Button>
-      <Button href="https://drive.google.com/file/d/1-mMXawayDRy5x316Ffum8e1SXuq5b0JI/view?usp=share_link" target='_blank' rel='noopener noreferrer' variant="contained" sx={{backgroundColor: 'chocolate'}}>Certificate</Button>
-      <Button href="https://docs.google.com/document/d/1R202c4maIDH8y-eluhxSiZQ--FQQ0BnI20IZM1dvfQo/edit?usp=share_link" target='_blank' rel='noopener noreferrer' variant="contained" sx={{backgroundColor: 'chocolate'}}>Cover Letter</Button>
+      <Button component={motion.a} href="https://drive.google.com/file/d/1EuTr7x1yn4WzvBfmr-E0MHr4W49SmZMZ/view?usp=share_link" target='_blank' rel='noopener noreferrer' variant="contained" sx={{backgroundColor: 'chocolate'}}
+      initial={{x: '-50rem', opacity: 0}}
+      animate={{ opacity: 1, x: 0}}
+      transition= {{duration: 1}}
+      whileHover={{scale: 1.2, transition: {duration: 0.3}}}
+      whileTap={{scale: 0.8}}
+      >
+        Resume
+      </Button>
+      
+      <Button component={motion.a} href="https://drive.google.com/file/d/1-mMXawayDRy5x316Ffum8e1SXuq5b0JI/view?usp=share_link" target='_blank' rel='noopener noreferrer' variant="contained" sx={{backgroundColor: 'chocolate'}}
+      initial={{y: '50rem', opacity: 0}}
+      animate={{ opacity: 1, y: 0}}
+      transition= {{duration: 1}}
+      whileHover={{scale: 1.2, transition: {duration: 0.3}}}
+      whileTap={{scale: 0.8}}>
+        Certificate
+      </Button>
+      
+      <Button  component={motion.a}  href="https://docs.google.com/document/d/1R202c4maIDH8y-eluhxSiZQ--FQQ0BnI20IZM1dvfQo/edit?usp=share_link" target='_blank' rel='noopener noreferrer' variant="contained" sx={{backgroundColor: 'chocolate'}}
+      initial={{x: '50rem', opacity: 0}}
+      animate={{ opacity: 1, x: 0}}
+      transition= {{duration: 1}}
+      whileHover={{scale: 1.2, transition: {duration: 0.3} , }}
+      whileTap={{scale: 0.8}}
+      >
+        Cover Letter
+      </Button>
     </Box>
   </Box>
 }
