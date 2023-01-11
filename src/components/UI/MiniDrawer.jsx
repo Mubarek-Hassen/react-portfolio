@@ -203,6 +203,7 @@ export default function MiniDrawer(props) {
             </a>
 
           {contactLinks.map((item, index) => (
+            <a href={item.link} target="_blank" rel="noreferrer noopener" className='contactLinks'>
             <ListItem key={item.text} disablePadding sx={{ display: 'block' }}>
               <ListItemButton
                 sx={{
@@ -219,13 +220,14 @@ export default function MiniDrawer(props) {
                   }}
                 >
                   {index === 0 && <GitHub sx={{color: '#171515'}} />}
-                  {index === 1 && <Twitter sx={{color: '#00acee'}} />}
-                  {index === 2 && <LinkedIn sx={{ color: '#0072b1'}} />}
+                  {index === 1 && <LinkedIn sx={{ color: '#0072b1'}} />}
+                  {index === 2 && <Twitter sx={{color: '#00acee'}} />}
                   
                 </ListItemIcon>
                 <ListItemText primary={item.text} sx={{ opacity: open ? 1 : 0 }} />
               </ListItemButton>
             </ListItem>
+            </a>
           ))}
         </List>
       </Drawer>
