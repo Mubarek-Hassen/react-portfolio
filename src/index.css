@@ -25,3 +25,8 @@ code {
   color: chocolate;
   text-decoration: none;
 }
+
+.contactLinks {
+  text-decoration: none;
+  color: inherit;
+}

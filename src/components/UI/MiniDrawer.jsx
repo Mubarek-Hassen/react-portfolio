@@ -99,6 +99,20 @@ export default function MiniDrawer(props) {
     setOpen(false);
   };
 
+  const contactLinks = [
+    {
+      link: 'https://github.com/Mubarek-Hassen',
+      text: 'GitHub'
+    },
+    {
+      link: 'https://www.linkedin.com/in/mubarek-hassen-wubitu/',
+      text: 'LinkedIn'
+    },
+    {
+      link: 'https://twitter.com/mubarekwubit',
+      text: 'Twitter'
+    },
+  ]
   return (
     <Box sx={{ display: 'flex', backgroundColor: 'ghostwhite', minHeight: '100vh', backgroundAttachment: 'fixed' }}>
       <CssBaseline  />
@@ -164,8 +178,9 @@ export default function MiniDrawer(props) {
         </List>
         <Divider />
         <List>
-          {['Email', 'GitHub', 'Twitter', 'LinkedIn'].map((text, index) => (
-            <ListItem key={text} disablePadding sx={{ display: 'block' }}>
+
+        <a href="mailto:mubarekhassen4@gmail.com" className='contactLinks'>
+          <ListItem disablePadding sx={{ display: 'block' }}>
               <ListItemButton
                 sx={{
                   minHeight: 48,
@@ -180,13 +195,35 @@ export default function MiniDrawer(props) {
                     justifyContent: 'center',
                   }}
                 >
-                  {index === 0 && <Mail />}
-                  {index === 1 && <GitHub sx={{color: '#171515'}} />}
-                  {index === 2 && <Twitter sx={{color: '#00acee'}} />}
-                  {index === 3 && <LinkedIn sx={{ color: '#0072b1'}} />}
+                  <Mail />
+                </ListItemIcon>
+                <ListItemText primary="Email" sx={{ opacity: open ? 1 : 0 }} />
+              </ListItemButton>
+            </ListItem>
+            </a>
+
+          {contactLinks.map((item, index) => (
+            <ListItem key={item.text} disablePadding sx={{ display: 'block' }}>
+              <ListItemButton
+                sx={{
+                  minHeight: 48,
+                  justifyContent: open ? 'initial' : 'center',
+                  px: 2.5,
+                }}
+              >
+                <ListItemIcon
+                  sx={{
+                    minWidth: 0,
+                    mr: open ? 3 : 'auto',
+                    justifyContent: 'center',
+                  }}
+                >
+                  {index === 0 && <GitHub sx={{color: '#171515'}} />}
+                  {index === 1 && <Twitter sx={{color: '#00acee'}} />}
+                  {index === 2 && <LinkedIn sx={{ color: '#0072b1'}} />}
                   
                 </ListItemIcon>
-                <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
+                <ListItemText primary={item.text} sx={{ opacity: open ? 1 : 0 }} />
               </ListItemButton>
             </ListItem>
           ))}

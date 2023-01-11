@@ -27,7 +27,6 @@ const Home =()=>{
       animate={{ opacity: 1, x: 0}}
       transition= {{duration: 1}}
       whileHover={{scale: 1.2, transition: {duration: 0.3}}}
-      whileTap={{scale: 0.8}}
       >
         Resume
       </Button>
@@ -37,7 +36,7 @@ const Home =()=>{
       animate={{ opacity: 1, scale: 1}}
       transition= {{duration: 1}}
       whileHover={{scale: 1.2, transition: {duration: 0.3}}}
-      whileTap={{scale: 0.8}}>
+      >
         Certificate
       </Button>
       
@@ -46,7 +45,7 @@ const Home =()=>{
       animate={{ opacity: 1, x: 0}}
       transition= {{duration: 1}}
       whileHover={{scale: 1.2, transition: {duration: 0.3} , }}
-      whileTap={{scale: 0.8}}
+
       >
         Cover Letter
       </Button>
