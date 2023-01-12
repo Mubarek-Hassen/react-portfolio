@@ -16,8 +16,8 @@ const Skills =()=>{
     <Typography variant="h2" sx={{ fontWeight: '500' }}> Skills </Typography>
     <br />
     
-    <Typography variant="h5" sx={{ mx: '1rem', mb: '5rem' }} paragraph>
-      - As a Full Stack Developer, one has to be comfortable, consistant, patient, passionate and motivated to consume new knowledge and evolve with new technology. Working on a full stack taught me how to integrate different technologies and get the desired outcome. But technical skills are not the only things that are needed. Sometimes, we have to work with fellow colleague. Interacting and communication are requirement as well.
+    <Typography variant="h5" sx={{ mx: 1, mb: '5rem' }} paragraph>
+      As a Full Stack Developer, one has to be comfortable, consistant, patient, passionate and motivated to consume new knowledge and evolve with new technology. Working on a full stack taught me how to integrate different technologies and get the desired outcome. But technical skills are not the only things that are needed. Sometimes, we have to work with fellow colleague. Interacting and communication are requirement as well.
     </Typography>
     <Divider sx={{mb: '2rem', backgroundColor: 'green', mx: 10 }}/>
         <ThemeProvider theme={theme}>

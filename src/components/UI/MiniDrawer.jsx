@@ -19,7 +19,6 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import { Javascript, Engineering, Work, Home, GitHub, Twitter, Mail, LocalCafe, LinkedIn } from '@mui/icons-material';
 
-
 const drawerWidth = 240;
 
 const openedMixin = (theme) => ({
@@ -178,7 +177,6 @@ export default function MiniDrawer(props) {
         </List>
         <Divider />
         <List>
-
         <a href="mailto:mubarekhassen4@gmail.com" className='contactLinks'>
           <ListItem disablePadding sx={{ display: 'block' }}>
               <ListItemButton

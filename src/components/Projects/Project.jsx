@@ -23,7 +23,7 @@ const Project =(props)=>{
         </Box>
       </CardActionArea>
         <Button variant="contained" sx={{ m: 2, backgroundColor: 'chocolate' }} href={props.link} target='_blank' rel='noopener noreferrer' >
-          Check it out
+          Check it out!
         </Button>
   </Box>
 }

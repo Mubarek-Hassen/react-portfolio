@@ -30,3 +30,10 @@ code {
   text-decoration: none;
   color: inherit;
 }
+
+.contactLinks:hover{
+  text-decoration: underline;
+  color: darkgreen;
+  font-style: italic;
+}
+
