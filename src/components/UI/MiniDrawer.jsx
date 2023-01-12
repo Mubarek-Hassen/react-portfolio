@@ -201,8 +201,8 @@ export default function MiniDrawer(props) {
             </a>
 
           {contactLinks.map((item, index) => (
-            <a href={item.link} target="_blank" rel="noreferrer noopener" className='contactLinks'>
-            <ListItem key={item.text} disablePadding sx={{ display: 'block' }}>
+            <ListItem key={index} disablePadding sx={{ display: 'block' }}>
+              <a href={item.link} target="_blank" rel="noreferrer noopener" className='contactLinks'>
               <ListItemButton
                 sx={{
                   minHeight: 48,
@@ -224,8 +224,8 @@ export default function MiniDrawer(props) {
                 </ListItemIcon>
                 <ListItemText primary={item.text} sx={{ opacity: open ? 1 : 0 }} />
               </ListItemButton>
-            </ListItem>
             </a>
+            </ListItem>
           ))}
         </List>
       </Drawer>
