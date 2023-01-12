@@ -23,7 +23,7 @@ This portfolio is designed and built by Mubarek Hassen. As a user, you'll be abl
   3. Material Icons
   4. Framer Motion
 
-![Preview](https://file%2B.vscode-resource.vscode-cdn.net/Users/mubarek/Desktop/Screenshot%202023-01-12%20at%201.36.07%20PM.png?version%3D1673548612011)
+![landing_preview](./src/data/Screenshot%202023-01-12%20at%201.36.07%20PM.png)
 
 
 ## Stretch goals
