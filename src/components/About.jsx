@@ -1,11 +1,12 @@
 import { Typography, Box, createTheme, responsiveFontSizes, ThemeProvider, Divider } from "@mui/material";
 import { motion } from "framer-motion";
 
+
 const About =()=>{
 
   let theme = createTheme();
   theme = responsiveFontSizes(theme);
-
+  const title = 'Mubarek - About'
   const who =  <Box sx={{maxWidth: '75%'}}>
       <Typography variant="h3" fontWeight='400' fontStyle='oblique' sx={{my: '0.5rem'}} >Who Am I?</Typography>
       <Typography variant='h5' paragraph sx={{m: '2rem', textAlign: 'left'}}>
@@ -26,6 +27,8 @@ const About =()=>{
       </Box>
 
   const contents = [who, what, why]
+  document.title = title
+  
 
   return  <Box component={motion.div} initial={{ opacity: 0}} transition={{ duration: 0.5}} animate={{opacity: 1}} sx={{ flexGrow: 1, py: 10, px: 4, textAlign: 'center' }}>
     <ThemeProvider theme={theme}  >

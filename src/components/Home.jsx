@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Home =()=>{
   let theme = createTheme();
   theme = responsiveFontSizes(theme);
-
+  document.title = 'Mubarek - Home'
   return <Box sx={{ flexGrow: 1, py: 10, px: 4 }} component={motion.div} initial={{ opacity: 0}} transition={{ duration: 0.5 }} animate={{opacity: 1}}>
     <Box sx={{display: 'flex', flexWrap: 'wrap' ,justifyContent: 'space-evenly', alignItems: 'center', minHeight: '40vh',  }} component={motion.div}
     initial>

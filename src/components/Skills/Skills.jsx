@@ -6,6 +6,7 @@ import { motion } from "framer-motion"
 const Skills =()=>{
   let theme = createTheme();
   theme = responsiveFontSizes(theme);
+  document.title = 'Mubarek - Skills'
   return <Box sx={{ flexGrow: 1, py: 10, px: 2, textAlign: 'center' }} 
     component={motion.div} 
     initial={{ y: '100%',opacity: 0, scale: 0}} 

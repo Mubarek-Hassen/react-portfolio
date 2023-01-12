@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Projects =()=>{
   let theme = createTheme();
   theme = responsiveFontSizes(theme);
-
+  document.title = 'Mubarek - Projects'
   return <Box component={motion.div} initial={{ opacity: 0}} transition={{ duration: 0.5}} animate={{opacity: 1}} sx={{flexGrow: 1, py: 10, px: 2, textAlign: 'center'  }}>
     <ThemeProvider theme={theme}>
     <Typography variant="h2" sx={{m: 3, fontWeight: '500'}}>Projects</Typography>
