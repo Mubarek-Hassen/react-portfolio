@@ -18,9 +18,7 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import { Javascript, Engineering, Work, Home, GitHub, Twitter, Mail, LocalCafe, LinkedIn } from '@mui/icons-material';
-
 const drawerWidth = 240;
-
 const openedMixin = (theme) => ({
   width: drawerWidth,
   transition: theme.transitions.create('width', {
