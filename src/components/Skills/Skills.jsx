@@ -8,9 +8,9 @@ const Skills =()=>{
   theme = responsiveFontSizes(theme);
   return <Box sx={{ flexGrow: 1, py: 10, px: 2, textAlign: 'center' }} 
     component={motion.div} 
-    initial={{ opacity: 0}} 
-    transition={{ duration: 0.5}} 
-    animate={{opacity: 1}}
+    initial={{ y: '100%',opacity: 0, scale: 0}} 
+    transition={{ duration: 1, type: 'spring'}} 
+    animate={{opacity: 1, y: 0, scale: 1}}
     >
     <ThemeProvider theme={theme}>
     <Typography variant="h2" sx={{ fontWeight: '500' }}> Skills </Typography>
