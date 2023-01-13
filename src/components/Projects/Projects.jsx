@@ -8,7 +8,7 @@ const Projects =()=>{
   document.title = 'Mubarek - Projects'
   return <Box component={motion.div} initial={{ opacity: 0}} transition={{ duration: 0.5}} animate={{opacity: 1}} sx={{flexGrow: 1, py: 10, px: 2, textAlign: 'center'  }}>
     <ThemeProvider theme={theme}>
-    <Typography variant="h2" sx={{m: 3, fontWeight: '500'}}>Projects</Typography>
+    <Typography variant="h1">Projects</Typography>
     <Divider sx={{mb: '2rem', backgroundColor: 'green', mx: 10 }}/>
     <Typography variant="h5" sx={{m: 2, p: 2 }}>
       The General Assembly Coding Bootcamp was a great journey were we learned and implemented what was taught daily. A lot of our work ressembled and mimicked a day to day work of a developer. These projects are the ones completed during the program.

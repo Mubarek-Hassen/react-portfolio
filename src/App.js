@@ -19,7 +19,6 @@ function App() {
           <Route path='/projects' element={<Projects />} />
         </Routes>
         </Suspense>
-      
       </MiniDrawer>
       </section>
   );

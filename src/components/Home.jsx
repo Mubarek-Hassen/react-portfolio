@@ -1,4 +1,4 @@
-import { Typography, Box, createTheme, ThemeProvider, responsiveFontSizes, Button } from "@mui/material"
+import { Typography, Box, createTheme, ThemeProvider, responsiveFontSizes, Button, } from "@mui/material"
 import { motion } from "framer-motion";
 
 const Home =()=>{
@@ -22,7 +22,7 @@ const Home =()=>{
     </motion.div>
     </Box>
     <Box sx={{textAlign: 'center',display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: 4, alignItems: 'center' }}>
-      <Button component={motion.a} href="https://drive.google.com/file/d/1UUMsgjrTOqtmNxh3b82vd2NI-wkSWN65/view?usp=share_link" target='_blank' rel='noopener noreferrer' variant="contained" sx={{backgroundColor: 'chocolate'}}
+      <Button component={motion.a} href="https://drive.google.com/file/d/1aiFy3t_8wyxfiIxhg-0Wcze1UPiwUk78/view?usp=share_link" target='_blank' rel='noopener noreferrer' variant="contained" sx={{backgroundColor: 'chocolate'}}
       initial={{x: '-50rem', opacity: 0}}
       animate={{ opacity: 1, x: 0}}
       transition= {{duration: 1}}
@@ -49,6 +49,11 @@ const Home =()=>{
       >
         Cover Letter
       </Button>
+      <Box>
+        <Typography >
+
+        </Typography>
+      </Box>
     </Box>
   </Box>
 }

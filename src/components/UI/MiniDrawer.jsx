@@ -18,6 +18,7 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import { Javascript, Engineering, Work, Home, GitHub, Twitter, Mail, LocalCafe, LinkedIn } from '@mui/icons-material';
+import { motion } from 'framer-motion';
 const drawerWidth = 240;
 const openedMixin = (theme) => ({
   width: drawerWidth,
@@ -110,6 +111,7 @@ export default function MiniDrawer(props) {
       text: 'Twitter'
     },
   ]
+
   return (
     <Box sx={{ display: 'flex', backgroundColor: 'ghostwhite', minHeight: '100vh', backgroundAttachment: 'fixed' }}>
       <CssBaseline  />
@@ -227,7 +229,22 @@ export default function MiniDrawer(props) {
           ))}
         </List>
       </Drawer>
+      <Box sx={{ width: '100%', height: '100%'}}>
       {props.children}
+      <Box sx={{ left: 0, bottom: 0, width: '100%', textAlign: 'center', mb: 3,}} 
+      >
+        <motion.div
+        viewport={{ once: '90vh'}}
+        initial={{ opacity: 0 }}
+        transition={{ duration: 3}}
+        whileInView={{opacity: 1}}
+        >
+        <>
+          Developed By Mubarek Hassen
+        </>
+        </motion.div>
+      </Box>
+      </Box>
     </Box>
   );
 }
