@@ -7,7 +7,7 @@ const Skills =()=>{
   let theme = createTheme();
   theme = responsiveFontSizes(theme);
   document.title = 'Mubarek - Skills'
-  return <Box sx={{ flexGrow: 1, py: 10, px: 2, textAlign: 'center' }} 
+  return <Box sx={{ flexGrow: 1, py: 10, px: 2, textAlign: 'center', }} 
     component={motion.div} 
     initial={{ y: '100%',opacity: 0, scale: 0}} 
     transition={{ duration: 1, type: 'spring'}} 
@@ -15,8 +15,8 @@ const Skills =()=>{
     >
     <ThemeProvider theme={theme}>
     <Typography variant="h1"> Skills </Typography>
-    <Divider sx={{mb: '2rem', backgroundColor: 'green', mx: 10 }}/>
-    <Typography variant="h5" sx={{ mx: 1, mb: '5rem' }} paragraph>
+    <Divider sx={{mb: '2rem', backgroundColor: 'green', mx: 10, }}/>
+    <Typography variant="h5" sx={{ mx: 1, mb: '5rem', }}>
       As a Full Stack Developer, one has to be comfortable, consistant, patient, passionate and motivated to consume new knowledge and evolve with new technology. Working on a full stack taught me how to integrate different technologies and get the desired outcome. But technical skills are not the only things that are needed. Sometimes, we have to work with fellow colleague. Interacting and communication are requirement as well.
     </Typography>
     <Divider sx={{mb: '2rem', backgroundColor: 'green', mx: 10 }}/>
